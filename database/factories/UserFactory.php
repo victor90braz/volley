@@ -41,4 +41,12 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        \App\Models\Post::factory(10)->create();
+    }
 }
