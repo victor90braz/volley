@@ -16,4 +16,13 @@ class Post extends Model
     public function comments() {
         return $this->hasMany(Comment::class);
     }
+
+    // lets associate post with tags
+
+    public function tags()
+    {
+        return $this->hasMany(Tag::class);
+
+        // personal, family, vacation
+    }
 }
