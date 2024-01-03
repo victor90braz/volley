@@ -17,11 +17,11 @@ class Post extends Model
         return $this->hasMany(Comment::class);
     }
 
-    // lets associate post with tags
+    // lets associate post with tags so isntead to user hasMany we use belongsToMany
 
     public function tags()
     {
-        return $this->hasMany(Tag::class);
+        return $this->belongsToMany(Tag::class);
 
         // personal, family, vacation
     }
