@@ -56,4 +56,11 @@ class User extends Authenticatable
     {
         return $this->hasOne(Experience::class);
     }
+
+    // todo - a user can have many posts
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
