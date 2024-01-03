@@ -25,4 +25,10 @@ class Post extends Model
 
         // personal, family, vacation
     }
+
+    // todo -> lets create an association between posts/tag
+
+    // posts
+    // tags('family', 'personal', 'work', 'vacation')
+    // post_tag
 }
